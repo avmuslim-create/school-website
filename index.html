@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Govt. Muslim Girls A.V. High School Jhelum</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+    font-family:Arial,sans-serif;
+    background:#f7fff9;
+    color:#173b28;
+}
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid #dcfce7;
+}
+.navbar{
+    max-width:1400px;
+    margin:auto;
+    padding:16px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:25px;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+.logo-icon{
+    width:48px;
+    height:48px;
+    border-radius:14px;
+    background:linear-gradient(135deg,#15803d,#22c55e);
+    color:white;
+    display:grid;
+    place-items:center;
+    font-size:23px;
+    font-weight:bold;
+}
+.logo h1{
+    font-size:18px;
+    color:#14532d;
+}
+.logo p{
+    font-size:11px;
+    color:#64748b;
+    margin-top:3px;
+}
+nav{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    flex-wrap:wrap;
+}
+nav a{
+    text-decoration:none;
+    color:#365b45;
+    font-size:14px;
+    font-weight:600;
+    padding:10px 12px;
+    border-radius:8px;
+}
+nav a:hover{
+    background:#dcfce7;
+    color:#15803d;
+}
+.menu-btn{
+    display:none;
+    border:0;
+    background:#dcfce7;
+    color:#166534;
+    padding:10px 14px;
+    border-radius:8px;
+    font-size:20px;
+}
+
+.hero{
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:80px 6%;
+    background:
+        radial-gradient(circle at 10% 20%,#dcfce7 0,transparent 28%),
+        radial-gradient(circle at 90% 80%,#bbf7d0 0,transparent 25%),
+        #f7fff9;
+}
+.hero-inner{max-width:900px}
+.badge{
+    display:inline-block;
+    padding:8px 15px;
+    border-radius:30px;
+    background:#dcfce7;
+    color:#166534;
+    font-size:13px;
+    font-weight:bold;
+    margin-bottom:22px;
+}
+.hero h2{
+    font-size:clamp(40px,6vw,76px);
+    line-height:1.02;
+    color:#14532d;
+    margin-bottom:22px;
+}
+.hero h2 span{color:#16a34a}
+.hero p{
+    max-width:750px;
+    margin:auto;
+    color:#64748b;
+    line-height:1.8;
+    font-size:17px;
+}
+.hero-buttons{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+.btn{
+    border:0;
+    border-radius:10px;
+    padding:13px 20px;
+    background:#15803d;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    text-decoration:none;
+    display:inline-block;
+}
+.btn:hover{background:#166534}
+.btn-light{
+    background:white;
+    color:#15803d;
+    border:1px solid #bbf7d0;
+}
+section{
+    padding:80px 6%;
+}
+.container{
+    max-width:1250px;
+    margin:auto;
+}
+.section-heading{
+    text-align:center;
+    margin-bottom:45px;
+}
+.section-heading .mini{
+    color:#16a34a;
+    font-size:13px;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+.section-heading h2{
+    font-size:40px;
+    color:#14532d;
+    margin:8px 0;
+}
+.section-heading p{
+    color:#64748b;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+}
+.card{
+    background:white;
+    border:1px solid #dcfce7;
+    border-radius:20px;
+    padding:27px;
+    box-shadow:0 10px 35px rgba(22,101,52,.06);
+}
+.card-icon{
+    width:50px;
+    height:50px;
+    border-radius:14px;
+    display:grid;
+    place-items:center;
+    background:#dcfce7;
+    color:#15803d;
+    font-size:22px;
+    margin-bottom:18px;
+}
+.card h3{
+    color:#166534;
+    margin-bottom:10px;
+}
+.card p{
+    color:#64748b;
+    line-height:1.7;
+}
+.stats{
+    max-width:1000px;
+    margin:-55px auto 0;
+    position:relative;
+    z-index:5;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    background:white;
+    border:1px solid #dcfce7;
+    border-radius:20px;
+    box-shadow:0 15px 45px rgba(21,128,61,.1);
+    overflow:hidden;
+}
+.stat{
+    padding:25px;
+    text-align:center;
+    border-right:1px solid #dcfce7;
+}
+.stat:last-child{border:0}
+.stat strong{
+    display:block;
+    color:#15803d;
+    font-size:30px;
+}
+.stat span{
+    color:#64748b;
+    font-size:13px;
+}
+.green-section{
+    background:#f0fdf4;
+}
+.classes-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+    gap:16px;
+}
+.class-card,.section-card{
+    background:white;
+    border:1px solid #dcfce7;
+    border-radius:16px;
+    padding:23px;
+    cursor:pointer;
+    transition:.2s;
+}
+.class-card:hover,.section-card:hover{
+    transform:translateY(-5px);
+    border-color:#4ade80;
+    box-shadow:0 12px 30px rgba(22,163,74,.1);
+}
+.class-card h3,.section-card h3{
+    color:#166534;
+}
+.class-card p,.section-card p{
+    color:#94a3b8;
+    font-size:13px;
+    margin-top:7px;
+}
+.result-area{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    border:1px solid #dcfce7;
+    padding:30px;
+    border-radius:22px;
+    box-shadow:0 10px 35px rgba(21,128,61,.06);
+}
+.result-search{
+    display:grid;
+    grid-template-columns:1fr 1fr auto;
+    gap:12px;
+}
+input,textarea,select{
+    width:100%;
+    padding:13px;
+    border:1px solid #cbd5e1;
+    border-radius:9px;
+    outline:none;
+    background:white;
+}
+input:focus,textarea:focus,select:focus{
+    border-color:#22c55e;
+}
+.notice{
+    padding:16px;
+    border-radius:12px;
+    background:#f0fdf4;
+    color:#166534;
+    margin-top:18px;
+}
+.timeline{
+    border-left:3px solid #86efac;
+    padding-left:25px;
+}
+.timeline-item{
+    margin-bottom:30px;
+    position:relative;
+}
+.timeline-item:before{
+    content:"";
+    position:absolute;
+    left:-34px;
+    top:3px;
+    width:14px;
+    height:14px;
+    background:#16a34a;
+    border-radius:50%;
+}
+.timeline-item h3{color:#166534}
+.timeline-item p{
+    color:#64748b;
+    margin-top:5px;
+    line-height:1.6;
+}
+.staff-card{
+    text-align:center;
+}
+.staff-avatar{
+    width:80px;
+    height:80px;
+    margin:0 auto 15px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    background:#dcfce7;
+    color:#15803d;
+    font-size:28px;
+    font-weight:bold;
+}
+footer{
+    background:#14532d;
+    color:white;
+    padding:50px 6% 25px;
+}
+.footer-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:35px;
+}
+footer h3{margin-bottom:15px}
+footer p,footer li{
+    color:#d1fae5;
+    line-height:1.7;
+}
+footer ul{
+    list-style:none;
+}
+.footer-bottom{
+    max-width:1200px;
+    margin:30px auto 0;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.15);
+    text-align:center;
+    color:#bbf7d0;
+}
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:5000;
+    background:rgba(0,0,0,.55);
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+.modal-box{
+    width:100%;
+    max-width:800px;
+    max-height:90vh;
+    overflow:auto;
+    background:white;
+    border-radius:20px;
+    padding:30px;
+}
+.modal-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+.close{
+    border:0;
+    background:#fee2e2;
+    color:#991b1b;
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    cursor:pointer;
+}
+.result-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+.result-table th,.result-table td{
+    padding:12px;
+    border-bottom:1px solid #dcfce7;
+    text-align:left;
+}
+.result-table th{
+    background:#15803d;
+    color:white;
+}
+@media(max-width:1000px){
+    nav{display:none}
+    nav.open{
+        display:flex;
+        position:absolute;
+        left:0;
+        right:0;
+        top:80px;
+        padding:15px 5%;
+        background:white;
+        border-bottom:1px solid #dcfce7;
+    }
+    .menu-btn{display:block}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .stat:nth-child(2){border-right:0}
+    .result-search{grid-template-columns:1fr}
+    .footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:550px){
+    .stats{grid-template-columns:1fr 1fr}
+    .stat{border-bottom:1px solid #dcfce7}
+    .hero{min-height:570px}
+    section{padding:60px 5%}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="navbar">
+
+<div class="logo">
+<div class="logo-icon">GM</div>
+<div>
+<h1>Govt. Muslim Girls A.V. High School</h1>
+<p>Jhelum • Education • Excellence</p>
+</div>
+</div>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<nav id="nav">
+<a href="#home">Home</a>
+<a href="#admissions">Admissions</a>
+<a href="#academics">Academics</a>
+<a href="#activities">Activities</a>
+<a href="games.html">Games</a>
+<a href="#results">Results</a>
+<a href="#success">Success</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</div>
+</header>
+
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+<div class="hero-inner">
+
+<div class="badge">WELCOME TO OUR SCHOOL</div>
+
+<h2>Building Bright<br><span>Futures Together.</span></h2>
+
+<p id="heroText">
+Govt. Muslim Girls A.V. High School Jhelum is committed to quality
+education, character building, discipline and creating opportunities
+for every student to succeed.
+</p>
+
+<div class="hero-buttons">
+<a href="#admissions" class="btn">Explore Admissions</a>
+<a href="#results" class="btn btn-light">Check Student Result</a>
+</div>
+
+</div>
+</section>
+
+
+<!-- STATS -->
+
+<div class="stats">
+
+<div class="stat">
+<strong>1056+</strong>
+<span>Students</span>
+</div>
+
+<div class="stat">
+<strong>Nursery–10</strong>
+<span>Classes</span>
+</div>
+
+<div class="stat">
+<strong>12+</strong>
+<span>Academic Levels</span>
+</div>
+
+<div class="stat">
+<strong>2026</strong>
+<span>Academic Year</span>
+</div>
+
+</div>
+
+
+<!-- ADMISSIONS -->
+
+<section id="admissions">
+
+<div class="container">
+
+<div class="section-heading">
+<div class="mini">Admissions</div>
+<h2>Admissions & Enrollment</h2>
+<p>Everything you need to know about admission.</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-icon">📝</div>
+<h3>Admission Forms</h3>
+<p id="admissionText">
+Admission forms are available through the school office during
+the announced admission period.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">📂</div>
+<h3>Required Documents</h3>
+<p id="documentsText">
+B-Form, previous school record, photographs and other required
+documents may be required.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">📅</div>
+<h3>Admission Timeline</h3>
+<p id="admissionTimeline">
+Admission dates and important announcements will be updated here.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ACADEMICS -->
+
+<section id="academics" class="green-section">
+
+<div class="container">
+
+<div class="section-heading">
+<div class="mini">Learning</div>
+<h2>Academic Timeline</h2>
+<p>Our academic information.</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-icon">📚</div>
+<h3>Classwise Course</h3>
+<p id="courseText">
+Class-wise curriculum and subjects are organized according
+to the academic requirements.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🕐</div>
+<h3>Timetable</h3>
+<p id="timetableText">
+Class timetables and periods are managed by the school.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">📆</div>
+<h3>Academic Calendar</h3>
+<p id="calendarText">
+Academic events, examinations and holidays are planned throughout
+the academic year.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">⭐</div>
+<h3>Important Timelines</h3>
+<p id="timelineText">
+Important dates and school announcements will appear here.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ACTIVITIES -->
+
+<section id="activities">
+
+<div class="container">
+
+<div class="section-heading">
+<div class="mini">Student Life</div>
+<h2>Activities</h2>
+<p>Learning goes beyond the classroom.</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-icon">🏆</div>
+<h3>Previous Activities</h3>
+<p id="previousActivities">
+Educational activities, competitions, celebrations and school events.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🎯</div>
+<h3>Activities Planner</h3>
+<p id="activityPlanner">
+Upcoming activities and events will be displayed here.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🎮</div>
+<h3>Student Games</h3>
+<p>
+Games and animations programmed by our own students in computer class.
+</p>
+<p style="margin-top:14px">
+<a class="btn" href="games.html">Open Games</a>
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- RESULTS -->
+
+<section id="results" class="green-section">
+
+<div class="container">
+
+<div class="section-heading">
+<div class="mini">Student Portal</div>
+<h2>Check Student Result</h2>
+<p>Find a student's result by roll number.</p>
+</div>
+
+<div class="result-area">
+
+<div class="result-search">
+
+<input id="publicRoll"
+placeholder="Enter Roll Number">
+
+<input id="publicStudentName"
+placeholder="Student Name (optional)">
+
+<button class="btn" onclick="searchPublicResult()">
+Search Result
+</button>
+
+</div>
+
+<div id="publicResult"></div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- CLASSES -->
+
+<section>
+
+<div class="container">
+
+<div class="section-heading">
+<div class="mini">Academic Levels</div>
+<h2>Classes</h2>
+<p>Select a class to explore sections and students.</p>
+</div>
+
+<div class="classes-grid" id="classCards"></div>
+
+</div>
+</section>
+
+
+<!-- SECTIONS -->
+
+<section id="publicSections" class="green-section" style="display:none">
+
+<div class="container">
+
+<button class="btn btn-light" onclick="backToClasses()">
+← Back to Classes
+</button>
+
+<div class="section-heading" style="margin-top:30px">
+<div class="mini">Sections</div>
+<h2 id="selectedClassTitle">Sections</h2>
+<p>Select a section to see students.</p>
+</div>
+
+<div class="classes-grid" id="sectionCards"></div>
+
+</div>
+</section>
+
+
+<!-- STUDENTS -->
+
+<section id="publicStudents" style="display:none">
+
+<div class="container">
+
+<button class="btn btn-light" onclick="backToSections()">
+← Back to Sections
+</button>
+
+<div class="section-heading" style="margin-top:30px">
+<div class="mini">Students</div>
+<h2 id="selectedSectionTitle">Students</h2>
+<p>Student list for this section.</p>
+</div>
+
+<div class="card" style="overflow:auto">
+<div id="studentList"></div>
+</div>
+
+</div>
+</section>
+
+
+<!-- SUCCESS -->
+
+<section id="success" class="green-section">
+
+<div class="container">
+
+<div class="section-heading">
+<div class="mini">Achievements</div>
+<h2>Success Stories</h2>
+<p>Celebrating the achievements of our students.</p>
+</div>
+
+<div class="grid" id="successCards"></div>
+
+</div>
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-heading">
+<div class="mini">Who We Are</div>
+<h2>About Our School</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-icon">🏫</div>
+<h3>Our School</h3>
+<p id="schoolText">
+Govt. Muslim Girls A.V. High School Jhelum provides an educational
+environment focused on learning, discipline and character development.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">👩‍🏫</div>
+<h3>Our Staff</h3>
+<p id="staffText">
+Our dedicated teachers work to provide quality education,
+guidance and support to students.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- STAFF -->
+
+<section class="green-section">
+
+<div class="container">
+
+<div class="section-heading">
+<div class="mini">Our Team</div>
+<h2>Staff</h2>
+<p>Meet our dedicated school staff.</p>
+</div>
+
+<div class="grid" id="staffCards"></div>
+
+</div>
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="section-heading">
+<div class="mini">Get In Touch</div>
+<h2>Contact Us</h2>
+<p>For school-related information.</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-icon">🏫</div>
+<h3>School</h3>
+<p id="contactSchool">
+Govt. Muslim Girls A.V. High School Jhelum
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">📞</div>
+<h3>Contact</h3>
+<p id="contactInfo">
+Please contact the school office for admission and other information.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">📍</div>
+<h3>Location</h3>
+<p id="contactAddress">
+Jhelum, Punjab, Pakistan
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>Govt. Muslim Girls A.V. High School Jhelum</h3>
+<p>
+Education • Character • Discipline • Excellence
+</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<ul>
+<li><a style="color:#d1fae5" href="#home">Home</a></li>
+<li><a style="color:#d1fae5" href="#admissions">Admissions</a></li>
+<li><a style="color:#d1fae5" href="#academics">Academics</a></li>
+<li><a style="color:#d1fae5" href="games.html">Games</a></li>
+<li><a style="color:#d1fae5" href="#results">Results</a></li>
+</ul>
+</div>
+
+<div>
+<h3>Contact</h3>
+<p id="footerContact">
+Govt. Muslim Girls A.V. High School Jhelum
+</p>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 Govt. Muslim Girls A.V. High School Jhelum • All Rights Reserved
+</div>
+
+</footer>
+
+
+<!-- RESULT MODAL -->
+
+<div class="modal" id="resultModal">
+
+<div class="modal-box">
+
+<div class="modal-head">
+<h2 id="modalStudentName">Student Result</h2>
+<button class="close" onclick="closeModal()">×</button>
+</div>
+
+<div id="modalResult"></div>
+
+</div>
+</div>
+
+
+<script>
+
+const defaultClasses=[
+{id:"nursery",name:"Nursery"},
+{id:"prep",name:"Prep"},
+{id:"1",name:"Class 1"},
+{id:"2",name:"Class 2"},
+{id:"3",name:"Class 3"},
+{id:"4",name:"Class 4"},
+{id:"5",name:"Class 5"},
+{id:"6",name:"Class 6"},
+{id:"7",name:"Class 7"},
+{id:"8",name:"Class 8"},
+{id:"9",name:"Class 9"},
+{id:"10",name:"Class 10"}
+];
+
+function data(key,fallback){
+    const x=localStorage.getItem(key);
+    return x?JSON.parse(x):fallback;
+}
+
+let classes=data("school_classes",defaultClasses);
+let sections=data("school_sections",[]);
+let students=data("school_students",[]);
+let results=data("school_results",[]);
+
+function safe(x){
+    return String(x??"")
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;")
+    .replaceAll("'","&#039;");
+}
+
+function toggleMenu(){
+    document.getElementById("nav").classList.toggle("open");
+}
+
+function renderClasses(){
+
+    classes=data("school_classes",defaultClasses);
+
+    const box=document.getElementById("classCards");
+
+    box.innerHTML="";
+
+    classes.forEach(c=>{
+
+        const count=sections.filter(s=>s.classId===c.id).length;
+
+        box.innerHTML+=`
+        <div class="class-card" onclick="openClass('${c.id}')">
+            <h3>${safe(c.name)}</h3>
+            <p>${count} section(s)</p>
+        </div>
+        `;
+
+    });
+}
+
+function openClass(id){
+
+    const c=classes.find(x=>x.id===id);
+    if(!c)return;
+
+    const area=document.getElementById("publicSections");
+    area.style.display="block";
+
+    document.getElementById("publicStudents").style.display="none";
+
+    document.getElementById("selectedClassTitle").textContent=c.name;
+
+    const box=document.getElementById("sectionCards");
+
+    box.innerHTML="";
+
+    const list=sections.filter(s=>s.classId===id);
+
+    if(!list.length){
+        box.innerHTML=`
+        <div class="card">
+        <h3>No sections available</h3>
+        <p>Sections will appear after the administrator adds them.</p>
+        </div>`;
+    }
+
+    list.forEach(s=>{
+
+        const count=students.filter(x=>x.sectionId===s.id).length;
+
+        box.innerHTML+=`
+        <div class="section-card" onclick="openSection('${s.id}')">
+            <h3>${safe(s.name)}</h3>
+            <p>${count} student(s)</p>
+        </div>
+        `;
+
+    });
+
+    area.scrollIntoView({behavior:"smooth"});
+
+}
+
+function openSection(id){
+
+    const s=sections.find(x=>x.id===id);
+    if(!s)return;
+
+    const c=classes.find(x=>x.id===s.classId);
+
+    document.getElementById("publicSections").style.display="none";
+    document.getElementById("publicStudents").style.display="block";
+
+    document.getElementById("selectedSectionTitle").textContent=
+    `${c?.name||""} — ${s.name}`;
+
+    const list=students.filter(x=>x.sectionId===id);
+
+    let html=`
+    <table class="result-table">
+    <tr>
+    <th>Roll No</th>
+    <th>Student Name</th>
+    <th>Father / Guardian</th>
+    <th>Result</th>
+    </tr>`;
+
+    if(!list.length){
+
+        html+=`
+        <tr>
+        <td colspan="4">No students available.</td>
+        </tr>`;
+
+    }else{
+
+        list.forEach(st=>{
+
+            const r=results.find(x=>x.studentId===st.id);
+
+            html+=`
+            <tr>
+            <td>${safe(st.roll||"-")}</td>
+            <td>${safe(st.name)}</td>
+            <td>${safe(st.father||"-")}</td>
+            <td>
+            ${
+                r
+                ?
+                `<button class="btn"
+                style="padding:8px 12px"
+                onclick="showResult('${st.id}')">
+                View Result
+                </button>`
+                :
+                "Not Added"
+            }
+            </td>
+            </tr>`;
+
+        });
+
+    }
+
+    html+="</table>";
+
+    document.getElementById("studentList").innerHTML=html;
+
+    document.getElementById("publicStudents")
+    .scrollIntoView({behavior:"smooth"});
+
+}
+
+function backToClasses(){
+    document.getElementById("publicSections").style.display="none";
+    document.getElementById("publicStudents").style.display="none";
+}
+
+function backToSections(){
+    document.getElementById("publicStudents").style.display="none";
+    document.getElementById("publicSections").style.display="block";
+    document.getElementById("publicSections")
+    .scrollIntoView({behavior:"smooth"});
+}
+
+function showResult(id){
+
+    const st=students.find(x=>x.id===id);
+    const r=results.find(x=>x.studentId===id);
+
+    if(!st||!r)return;
+
+    document.getElementById("modalStudentName")
+    .textContent=st.name+" — Result";
+
+    let html=`
+
+    <p><b>Roll No:</b> ${safe(st.roll||"-")}</p>
+    <p><b>Father / Guardian:</b> ${safe(st.father||"-")}</p>
+
+    <table class="result-table">
+
+    <tr>
+    <th>Subject</th>
+    <th>Total</th>
+    <th>Obtained</th>
+    </tr>`;
+
+    r.subjects.forEach(s=>{
+
+        html+=`
+        <tr>
+        <td>${safe(s.name)}</td>
+        <td>${s.total}</td>
+        <td>${s.obtained}</td>
+        </tr>`;
+
+    });
+
+    html+=`
+    </table>
+
+    <div class="notice">
+
+    <b>Total Marks:</b> ${r.total}<br>
+    <b>Obtained Marks:</b> ${r.obtained}<br>
+    <b>Percentage:</b> ${r.percentage}%<br>
+    <b>Grade:</b> ${safe(r.grade)}
+
+    </div>`;
+
+    document.getElementById("modalResult").innerHTML=html;
+
+    document.getElementById("resultModal").style.display="flex";
+
+}
+
+function closeModal(){
+    document.getElementById("resultModal").style.display="none";
+}
+
+function searchPublicResult(){
+
+    const roll=
+    document.getElementById("publicRoll").value.trim();
+
+    const name=
+    document.getElementById("publicStudentName")
+    .value.trim().toLowerCase();
+
+    const box=document.getElementById("publicResult");
+
+    if(!roll && !name){
+
+        box.innerHTML=`
+        <div class="notice">
+        Please enter a roll number or student name.
+        </div>`;
+
+        return;
+
+    }
+
+    const st=students.find(s=>
+        (roll && String(s.roll).toLowerCase()===roll.toLowerCase())
+        ||
+        (name && String(s.name).toLowerCase()===name)
+    );
+
+    if(!st){
+
+        box.innerHTML=`
+        <div class="notice">
+        No student found.
+        </div>`;
+
+        return;
+
+    }
+
+    const r=results.find(x=>x.studentId===st.id);
+
+    if(!r){
+
+        box.innerHTML=`
+        <div class="notice">
+        Student found, but result has not been added yet.
+        </div>`;
+
+        return;
+
+    }
+
+    let html=`
+    <div class="notice">
+
+    <h3>${safe(st.name)}</h3>
+
+    Roll No: ${safe(st.roll||"-")}<br>
+    Father/Guardian: ${safe(st.father||"-")}<br>
+    Percentage: <b>${r.percentage}%</b><br>
+    Grade: <b>${safe(r.grade)}</b>
+
+    <br><br>
+
+    <button class="btn"
+    onclick="showResult('${st.id}')">
+    View Full Result
+    </button>
+
+    </div>`;
+
+    box.innerHTML=html;
+
+}
+
+function loadContent(){
+
+    const c=data("school_content",{});
+
+    const map={
+        heroText:"heroText",
+        admissionText:"admissionText",
+        documentsText:"documentsText",
+        admissionTimeline:"admissionTimeline",
+        courseText:"courseText",
+        timetableText:"timetableText",
+        calendarText:"calendarText",
+        timelineText:"timelineText",
+        previousActivities:"previousActivities",
+        activityPlanner:"activityPlanner",
+        schoolText:"schoolText",
+        staffText:"staffText",
+        contactSchool:"contactSchool",
+        contactInfo:"contactInfo",
+        contactAddress:"contactAddress",
+        footerContact:"footerContact"
+    };
+
+    Object.keys(map).forEach(k=>{
+
+        if(c[k]!==undefined){
+
+            const el=document.getElementById(map[k]);
+
+            if(el)el.textContent=c[k];
+
+        }
+
+    });
+
+    const stories=data("school_stories",[
+        {
+            title:"Academic Achievement",
+            text:"Our students continue to achieve success through hard work and dedication."
+        },
+        {
+            title:"Co-Curricular Success",
+            text:"Students participate in competitions, activities and educational events."
+        }
+    ]);
+
+    document.getElementById("successCards").innerHTML=
+    stories.map(s=>`
+        <div class="card">
+            <div class="card-icon">🏆</div>
+            <h3>${safe(s.title)}</h3>
+            <p>${safe(s.text)}</p>
+        </div>
+    `).join("");
+
+    const staff=data("school_staff",[]);
+
+    document.getElementById("staffCards").innerHTML=
+    staff.length
+    ?
+    staff.map(s=>`
+        <div class="card staff-card">
+            <div class="staff-avatar">
+            ${safe((s.name||"S").charAt(0).toUpperCase())}
+            </div>
+            <h3>${safe(s.name)}</h3>
+            <p><b>${safe(s.role)}</b></p>
+            <p>${safe(s.info||"")}</p>
+        </div>
+    `).join("")
+    :
+    `
+    <div class="card">
+    <h3>Our Dedicated Staff</h3>
+    <p>Staff information will be updated by the school administration.</p>
+    </div>`;
+}
+
+window.addEventListener("storage",()=>{
+    classes=data("school_classes",defaultClasses);
+    sections=data("school_sections",[]);
+    students=data("school_students",[]);
+    results=data("school_results",[]);
+    renderClasses();
+    loadContent();
+});
+
+renderClasses();
+loadContent();
+
+</script>
+
+</body>
+</html>
